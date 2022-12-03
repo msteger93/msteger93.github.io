@@ -2894,7 +2894,7 @@ ul {
 #header > header .avatar {
   display: block;
   margin: 0 auto 2.25em auto;
-  width: 8em;
+  width: 15em;
 }
 
 #header > header h1 {
@@ -3610,14 +3610,40 @@ a object {
   /* content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='100' cy='50' r='40' stroke='black' stroke-width='2' fill='red'/%3E%3Cpolyline points='20,20 40,25 60,40 80,120 120,140 200,180' style='fill:none;stroke:black;stroke-width:3'/%3E%3C/svg%3E "); */
 }
 
+.btn {
+
+
+	color: #FFFFFF;
+  
+  
+	background-color: #8FBC8F
+  
+  
+	}
 .email-button {
 	background-color: white;
 	border-radius: 25px;
 	border-color: white;
-	margin-top: -100px;
-	margin-left: 50px;
-
+	margin-top: -120px;
+	font-weight: 600;	
 }
+.email-button::after{
+	background-color: #777;
+	border-color: white;
+}
+.email-button:active{
+	background-color: #777;
+	border-color: white;
+	/* background: #000; */
+	box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+	background-color: white;
+	color: #777 !important;
+	border-color: white;
+}
+
 .email-button p{
 	margin: 0 !important;
 	color: #777 !important;
@@ -3625,15 +3651,20 @@ a object {
 
 .email-button:hover {
 	background-color: #777;
-	border-color: white;
+	border-color: #777;
+	color: #777
   }
+
+  .email-button:focus, .email-button:focus-visible {
+	border-color: #777;
+	box-shadow: None !important;
+	outline: none;
+}
 
 .email-button:hover p{
 	color: white !important;
-	
   }
 
-/* .email-button.mailIcon {
-	fill: black !important;
-} */
-  
+  .email-button:hover:active p {
+	color: grey !important;
+}
