@@ -3564,12 +3564,11 @@ ul {
   padding-top: 0px;
   padding-right: 20px;
   padding-bottom: 20px;
-  padding-left: 20px;
   overflow: hidden;
   font-weight: normal;
   border-radius: 0px;
-  margin-left: -50px;
-  margin-top: 15px;
+  margin-left: -2.85em;
+  margin-top: 0px;
   margin-right: 25px;
 }
 
