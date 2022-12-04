@@ -2770,7 +2770,7 @@ input[type="button"]:disabled,
 
 .projects article:first-child {
   border-top: 0;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .projects article .image {
@@ -3029,7 +3029,7 @@ ul {
 }
 
 .color-three {
-  background-color: black !important;
+  background-color: #101010 !important;
 }
 
 .color-three h3,
@@ -3802,7 +3802,7 @@ a object {
 }
 
 .titleCompany .company {
-  color: #a2c772;
+  color: white;
 }
 
 .project h5 {
@@ -3825,8 +3825,8 @@ a object {
 .corner-border,
 .bottom-corner {
   position: relative;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  /* margin-top: 30px; */
+  margin-bottom: 10px;
 }
 
 /* top line */
