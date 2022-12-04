@@ -2788,13 +2788,17 @@ input[type="button"]:disabled,
 .projects article .inner {
   display: inline-block;
   vertical-align: middle;
-  background-color: #777;
-  border: groove #D0D0D0;
+  background-color: #484848;
+  background-color: transparent;
+  /* border: groove #D0D0D0; */
   color: white;
   border-radius: 0px;
   width: 100%;
   /* width: 50%; */
 }
+
+
+
 
 /* .projects article .inner div {
   padding: 20px !important;
@@ -3744,11 +3748,129 @@ a object {
 }
 
 .titleCompany h4{
-	color: white;
+	color: #a2c772;
 	margin: 0;
+}
+
+.titleCompany .company {
+	color: #a2c772;
 }
 
 .project h5 {
 	color: white;
 	font-weight: bold !important;
 }
+
+.skillName{
+    color: #a2c772;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+
+.top-and-bottom, .left-and-right, .corner-border, .bottom-corner {
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+  
+  }
+  
+  /* top line */
+  .top-and-bottom::before {
+	content:'';
+	position: absolute;
+	background-color: #a2c772;
+	width: 30%;
+	height: 3px;
+	top: 0;
+	left:0;
+  }
+  
+  /* bottom line */
+  .top-and-bottom::after {
+	content:'';
+	position: absolute;
+	background-color: #a2c772;
+	width: 30%;
+	height: 3px;
+	bottom: 0;
+	left:0;
+  }
+  
+  /* left line before text*/
+  .left-and-right::before {
+	content:'';
+	position: absolute;
+	background-color: #a2c772;
+	width: 3px;
+	height: 90%;
+	bottom: 0;
+	left:-7px; 
+  }
+  
+  /* left line after text*/
+  .left-and-right::after{
+	content:'';
+	position: absolute;
+	background-color: #a2c772;
+	width: 3px;
+	height: 90%;
+	bottom: 0;
+	right:55px;
+   
+  }
+  
+  /* vertical line */
+  .corner-border::after {
+	content:'';
+	position: absolute;
+	background-color: #a2c772;
+	width: 3px;
+	height: 60%;
+	top: 0;
+	left:-15px;
+   
+  }
+  
+  /* horizontal line */
+  .corner-border::before{
+	content:'';
+	position: absolute;
+	background-color: #a2c772;
+	width: 20%;
+	height: 3px;
+	top: 0;
+	left:-12px;
+   
+  }
+  
+  /* vertical line */
+  .bottom-corner::after {
+	content:'';
+	position: absolute;
+	background-color: #a2c772;
+	width: 3px;
+	height: 50%;
+	bottom: 0;
+	right:-10px;
+   
+  }
+  /* horizontal line */
+  .bottom-corner::before {
+	content:'';
+	position: absolute;
+	background-color: #a2c772;
+	width: 20%;
+	height: 3px;
+	bottom: 0;
+	right:-10px;
+   
+  }
