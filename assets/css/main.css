@@ -3722,7 +3722,6 @@ a object {
 
 .btn {
   color: #ffffff;
-
   background-color: #8fbc8f;
 }
 
@@ -3913,4 +3912,12 @@ a object {
   height: 3px;
   bottom: 0;
   right: -10px;
+}
+
+.module a {
+  color: white;
+}
+
+.module a:hover {
+  color: #a2c772 !important;
 }
