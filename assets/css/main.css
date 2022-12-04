@@ -3665,7 +3665,9 @@ a object {
 
   background-color: #8fbc8f;
 }
+
 .email-button {
+  height: 20%;
   background-color: white;
   border-radius: 25px;
   border-color: white;
