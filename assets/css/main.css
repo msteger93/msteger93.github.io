@@ -2760,42 +2760,43 @@ input[type="button"]:disabled,
   opacity: 0.25;
 }
 
-/* Features */
+/* projects */
 
-.features article {
+.projects article {
   border-top: solid 3px transparent;
   margin-bottom: 1.125em;
   padding-top: 1.125em;
 }
 
-.features article:first-child {
+.projects article:first-child {
   border-top: 0;
   padding-top: 25px;
 }
 
-.features article .image {
+.projects article .image {
   display: inline-block;
   padding-right: 2.5em;
   vertical-align: middle;
   width: 48%;
 }
 
-.features article .image img {
+.projects article .image img {
   display: block;
   width: 100%;
 }
 
-.features article .inner {
+.projects article .inner {
   display: inline-block;
   vertical-align: middle;
   background-color: #777;
+  border: groove #D0D0D0;
   color: white;
   border-radius: 0px;
   width: 100%;
   /* width: 50%; */
 }
 
-/* .features article .inner div {
+/* .projects article .inner div {
   padding: 20px !important;
 } */
 
@@ -2811,21 +2812,21 @@ input[type="button"]:disabled,
   padding-left: 20px !important;
 }
 
-.features article .inner h5 {
+.projects article .inner h5 {
   padding-left: 5px;
   padding-top: 15px;
   margin: 0px !important;
 }
 
-.features article .inner .projectContent {
+.projects article .inner .projectContent {
   padding-left: 25px;
 }
-.features article .inner .projectContent p,
+.projects article .inner .projectContent p,
 ul {
   margin: 0px 0px 0px 0px !important;
 }
 
-.features article .inner > :last-child {
+.projects article .inner > :last-child {
   margin-bottom: 0;
 }
 
@@ -3383,16 +3384,16 @@ ul {
     font-size: 1.5em;
   }
 
-  /* Features */
+  /* projects */
 
-  .features article .image {
+  .projects article .image {
     display: block;
     margin: 0 0 2.25em 0;
     padding-right: 0;
     width: 100%;
   }
 
-  .features article .inner {
+  .projects article .inner {
     display: block;
     width: 100%;
   }
@@ -3552,15 +3553,16 @@ ul {
   font-weight: bold;
   /* rounded corners? */
 }
-.skills li {
-  color: #777;
+
+.li.icon.solid:before {
+	padding-left: 200px !important;
 }
-
-
 .skills div {
-  padding: 20px 20px 20px 20px;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   overflow: hidden;
-  background-color: #f1f1f1;
   font-weight: normal;
   border-radius: 0px;
   margin-left: -50px;
