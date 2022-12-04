@@ -3016,7 +3016,7 @@ ul {
 }
 
 .color-grey {
-	background-color: grey !important;
+	background-color: #777 !important;
   }
 
   .color-grey svg path, .color-grey .text{
@@ -3549,7 +3549,7 @@ ul {
   overflow: hidden;
   background-color: #f1f1f1;
   font-weight: normal;
-  border-radius: 25px;
+  border-radius: 0px;
   margin-left: -50px;
   margin-top: 15px;
   margin-right: 25px;
