@@ -2999,9 +2999,13 @@ ul {
 /* colours for transitions between sections */
 
 .color-black {
-  background-color: black !important;
-  color: #808080 !important;
-}
+	background-color: black !important;
+	color: #808080 !important;
+  }
+
+  .color-black svg path{
+	fill: white
+  }
 
 .color-black h4 {
   color: #d3d3d3 !important;
@@ -3012,8 +3016,14 @@ ul {
 }
 
 .color-grey {
-  background-color: grey !important;
-}
+	background-color: grey !important;
+  }
+
+  .color-grey svg path, .color-grey .text{
+	fill: #F5F5F5;
+	color: #F5F5F5;
+  }
+	
 .color-white {
   background-color: white !important;
 }
