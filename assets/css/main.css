@@ -2977,28 +2977,46 @@ ul {
 /* Main */
 
 #main > section {
+  /* background-color: #4f4f4f; */
+  /* background-color: black; */
   /* border-top: solid 6px #f4f4f4; */
+}
+
+#main {
+	-webkit-transition: background-color 1s ease-out!important;
+	-moz-transition: background-color 1s ease-out!important;
+	-o-transition: background-color 1s ease-out!important;
+	transition: background-color 1s ease-out!important;
 }
 
 #main > section > .container {
   padding: 6em 0 4em 0;
-}
-/* 
-#main > section {
-	background-color: #202020
-} */
-
-#one {
-  background: linear-gradient(180deg, #202020, #404040);
+  /* color: grey; */
 }
 
-#two {
-  background: linear-gradient(180deg, #404040, #606060);
-}
 
-#three {
-  background: linear-gradient(180deg, #606060, #808080);
-}
+/* colours for transitions between sections */
+
+.color-black {
+	background-color: black;
+	color: #777
+  }
+
+  .color-black h4{
+	color: #D3D3D3
+  }
+
+  .color-black em{
+	color: white
+  }
+
+  .color-grey {
+	background-color: grey;
+  }
+  .color-white {
+	background-color: white;
+  }
+
 
 #main > section:first-child {
   border-top: 0;
@@ -3512,7 +3530,7 @@ ul {
   /* rounded corners? */
 }
 .skills li {
-	color: #777
+  color: #777;
 }
 
 .skills div {
@@ -3682,3 +3700,12 @@ a object {
 .email-button:hover:active p {
   color: grey !important;
 }
+#jobtitle {
+  /* font-size: 25px; */
+  color: white;
+}
+/* 
+.project{
+	width: 50%;
+} */
+/* Transition between section	 */

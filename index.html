@@ -18,16 +18,18 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
-</head>
-<body class="is-preload">
-	<!-- Header -->
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
     <section id="header">
-		<header>
-			<div>
-				<span class="image avatar"><img src="images/avatar.jpg"" alt="" /></span>
-				<a class="btn btn-primary email-button"><p>Contact Me</p></a>
-				<h1 id="logo"><a href="#">Marcel Raymond Steger</a></h1>
-		</div>
+      <header>
+        <div>
+          <span class="image avatar"
+            ><img src="images/avatar.jpg"" alt="" /></span
+          >
+          <a class="btn btn-primary email-button"><p>Contact Me</p></a>
+          <h1 id="logo"><a href="#">Marcel Raymond Steger</a></h1>
+        </div>
         <p>
           If your neighbors don't hear you typing<br />
           your commits lack character.
@@ -77,38 +79,40 @@
       <!-- Main -->
       <div id="main">
         <!-- One -->
+        <!-- section, container, ul , li-->
         <section id="one">
           <div class="image main" data-position="center">
             <img src="images/banner.jpg" alt="" />
           </div>
-          <div class="container">
+          <div class="container" data-color="black">
             <header class="major">
               <!-- <h2>Marcel Raymond Steger</h2> -->
-              <h2>Senior Data Scientist and ML Engineer</h2>
+              <h2 id="jobtitle">Senior Data Scientist and ML Engineer</h2>
             </header>
 
             <h4>Bio</h4>
             <p>
               I am a Data Scientist with a strong background in software
               engineering. My applied experience ranges from (ML-based and
-              classical) Computer Vision in Robotics, NLP in the entertainment
-              industry all the way to Data Engineering in the Cloud.
-              Additionally, I have analysed and improved data related workflows
-              in the following industries: medical, robotics, automotive, music,
-              insurance, sports and sales.  
+              classical) <em>Computer Vision</em> in Robotics, NLP in the
+              entertainment industry all the way to Data Engineering in the
+              Cloud. Additionally, I have analysed and improved data related
+              workflows in the following industries: medical, robotics,
+              automotive, music, insurance, sports and sales.  
             </p>
             <h4>Formal Education</h4>
             <p>
               My educational background with an M.Sc. in Data Science, concluded
               with distinction gives me a strong mathematical and theoretical
-              foundation towards Data Science and AI methods. In addition I bring an interesting perspective to AI with a B.Sc. in Psychology.
+              foundation towards Data Science and AI methods. In addition I
+              bring an interesting perspective to AI with a B.Sc. in Psychology.
             </p>
           </div>
         </section>
 
         <!-- Two -->
         <section id="two">
-          <div class="container">
+          <div class="container" data-color="grey">
             <header class="major">
               <p>
                 <span class="cardSpan">
@@ -124,7 +128,6 @@
                 </span>
               </p>
             </header>
-
             <ul class="feature-icons">
               <li class="icon solid fa-brain skills">
                 Machine Learning
@@ -245,7 +248,7 @@
 
         <!-- Three -->
         <section id="three">
-          <div class="container">
+          <div class="container" data-color="white">
             <h3>Project Experience</h3>
             <p>
               Integer eu ante ornare amet commetus vestibulum blandit integer in
@@ -663,13 +666,12 @@
                       <div class="company">Porsche Informatik</div>
                     </div>
 
-					<div class="technologies">
-						<h5>Main Technologies of the project</h5>
-						<div class="projectContent">
-						  <p>R, Python, PySpark, Bash</p>
-						</div>
-					  </div>
-
+                    <div class="technologies">
+                      <h5>Main Technologies of the project</h5>
+                      <div class="projectContent">
+                        <p>R, Python, PySpark, Bash</p>
+                      </div>
+                    </div>
 
                     <div class="accomplishments">
                       <h5>Accomplishments</h5>
@@ -695,7 +697,7 @@
                         </ul>
                       </div>
                     </div>
-                   
+
                     <div class="projectDescription">
                       <h5>Project Description</h5>
                       <div class="module">
@@ -755,12 +757,12 @@
                       <h4>Data Scientist</h4>
                       <div class="company">AB Mikroelektronik</div>
                     </div>
-					<div class="technologies">
-						<h5>Main Technologies of the project</h5>
-						<div class="projectContent">
-						  <p>R, R Shiny, SQL</p>
-						</div>
-					  </div>
+                    <div class="technologies">
+                      <h5>Main Technologies of the project</h5>
+                      <div class="projectContent">
+                        <p>R, R Shiny, SQL</p>
+                      </div>
+                    </div>
                     <div class="accomplishments">
                       <h5>Accomplishments</h5>
                       <div class="projectContent">
@@ -775,7 +777,6 @@
                         </ul>
                       </div>
                     </div>
-                 
                   </div>
                 </div>
               </article>
@@ -823,6 +824,51 @@
           }
         });
       }
+    </script>
+    <script>
+      // var test = document.getElementById("one")
+      // var section = document.querySelector("#one, #two, #three");
+
+      $(window)
+        .scroll(function () {
+          // selectors
+          var $window = $(window);
+          var $body = $("#main");
+          var $panel = $(".container");
+
+          // Change 33% earlier than scroll position so colour is there when you arrive.
+          var scroll = $window.scrollTop() + $window.height() / 3;
+
+          //   var $helloworld = $("#hi");
+          //   console.log("Helloworld");
+          //   console.log($panel);
+          //   console.log($panel);
+          $panel.each(function () {
+            var $this = $(this);
+            console.log("Iteration");
+            console.log($this);
+            console.log($body);
+            console.log("_______________");
+            // if position is within range of this panel.
+            // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+            // Remember we set the scroll to 33% earlier in scroll var.
+            if (
+              $this.position().top <= scroll &&
+              $this.position().top + $this.height() > scroll
+            ) {
+              // console.log("removing color class")
+              // Remove all classes on body with color-
+              $body.removeClass(function (index, css) {
+                return (css.match(/(^|\s)color-\S+/g) || []).join(" ");
+              });
+
+              //   console.log("Adding color", $this);
+              // Add class of currently active div
+              $body.addClass("color-" + $(this).data("color"));
+            }
+          });
+        })
+        .scroll();
     </script>
   </body>
 </html>
