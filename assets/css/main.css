@@ -2983,10 +2983,12 @@ ul {
 }
 
 #main {
-	-webkit-transition: background-color 1s ease-out!important;
-	-moz-transition: background-color 1s ease-out!important;
-	-o-transition: background-color 1s ease-out!important;
-	transition: background-color 1s ease-out!important;
+  background-color: black;
+  color: #777;
+  -webkit-transition: background-color 0.5s ease-out !important;
+  -moz-transition: background-color 0.5s ease-out !important;
+  -o-transition: background-color 0.5s ease-out !important;
+  transition: background-color 0.5s ease-out !important;
 }
 
 #main > section > .container {
@@ -2994,29 +2996,27 @@ ul {
   /* color: grey; */
 }
 
-
 /* colours for transitions between sections */
 
 .color-black {
-	background-color: black;
-	color: #777
-  }
+  background-color: black !important;
+  color: #808080 !important;
+}
 
-  .color-black h4{
-	color: #D3D3D3
-  }
+.color-black h4 {
+  color: #d3d3d3 !important;
+}
 
-  .color-black em{
-	color: white
-  }
+.color-black .emph {
+  color: white !important;
+}
 
-  .color-grey {
-	background-color: grey;
-  }
-  .color-white {
-	background-color: white;
-  }
-
+.color-grey {
+  background-color: grey !important;
+}
+.color-white {
+  background-color: white !important;
+}
 
 #main > section:first-child {
   border-top: 0;
