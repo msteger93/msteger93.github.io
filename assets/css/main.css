@@ -2311,8 +2311,16 @@ input[type="radio"] + label:before {
 
 .image.main {
   display: block;
-  height: 8em;
+  height: 15em;
   border-radius: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .image.main {
+    display: block;
+    height: 5em !important;
+    border-radius: 0;
+  }
 }
 
 .image.main img {
@@ -3370,7 +3378,7 @@ ul {
   }
 
   .image.main {
-    height: 12em;
+    height: 20em;
   }
 
   /* Section/Article */
@@ -3781,6 +3789,7 @@ a object {
 
 #jobtitle {
   color: white;
+  font-size: 4vh;
 }
 
 .titleCompany {
