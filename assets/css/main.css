@@ -3845,8 +3845,19 @@ a object {
   background-color: white;
   border-radius: 25px;
   border-color: white;
-  margin-top: -120px;
+  margin-top: -12.5vh;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    font-size: 0.75rem;
+    font-weight: 1000;
+    padding-top: 0.1875rem;
+    padding-right: 0.375rem;
+    padding-bottom: 0.1875rem;
+    padding-left: 0.375rem;
+  }
 }
 
 .email-button::after {
@@ -4030,8 +4041,3 @@ a object {
 .module a:hover {
   color: #a2c772 !important;
 }
-
-/* Solves bottom white space issue on mobile */
-/* #wrapper {
-  background-color: #202020 !important;
-} */
