@@ -122,7 +122,7 @@
               <li class="icon solid fa-user-shield">
                 <span class="industryName"> insurance</span>
               </li>
-              <li class="icon solid fa-running ">
+              <li class="icon solid fa-running">
                 <span class="industryName"> sports</span>
               </li>
               <li class="icon solid fa-blender">
@@ -303,7 +303,7 @@
                         align-items: start;
                       "
                     >
-                    <h4>GCP Data Engineering</h4>
+                      <h4>GCP Data Engineering</h4>
                       <div class="company">
                         <div class="companyIconX"></div>
                         <div class="companyName">Mindfuel GmbH</div>
@@ -847,29 +847,17 @@
       }
     </script>
     <script>
-      // var test = document.getElementById("one")
-      // var section = document.querySelector("#one, #two, #three");
-
       $(window)
         .scroll(function () {
           // selectors
           var $window = $(window);
-          var $body = $("#main");
+          var $body = $("#wrapper");
           var $panel = $(".container");
 
           // Change 33% earlier than scroll position so colour is there when you arrive.
           var scroll = $window.scrollTop() + $window.height() / 3;
-
-          //   var $helloworld = $("#hi");
-          //   console.log("Helloworld");
-          //   console.log($panel);
-          //   console.log($panel);
           $panel.each(function () {
             var $this = $(this);
-            console.log("Iteration");
-            console.log($this);
-            console.log($body);
-            console.log("_______________");
             // if position is within range of this panel.
             // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
             // Remember we set the scroll to 33% earlier in scroll var.
@@ -877,13 +865,10 @@
               $this.position().top <= scroll &&
               $this.position().top + $this.height() > scroll
             ) {
-              // console.log("removing color class")
               // Remove all classes on body with color-
               $body.removeClass(function (index, css) {
                 return (css.match(/(^|\s)color-\S+/g) || []).join(" ");
               });
-
-              //   console.log("Adding color", $this);
               // Add class of currently active div
               $body.addClass("color-" + $(this).data("color"));
             }
